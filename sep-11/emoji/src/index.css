@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+:root {
+    --light: #D9D9D9;
+    --white: #FFFFFF;
+    --blue: #284B63;
+    --green-blue: #3C6E71;
+    --grey: #353535;
+  }
+
+body
+{
+    background-color: var(--light);
+    margin: 0px;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0px;
+    padding:0px;
+    
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+.container{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ gap: 1rem;
+ margin: 1rem;
+ justify-content: space-between;
+ cursor: pointer;
+}
+
+.item{
+background-color: var(--white);
+display: inline-block;
+width: 10rem;
+height: 6rem;
+border-radius:5px ;
+align-self: stretch;
+text-align: center;
+padding: 0px 0.5rem;
+transition: all 0.2s linear;
+}
+
+.item:hover{
+background-color:var(--blue) ;
+color:var(--white) ;
+box-shadow: 5px 5px 7px var(--green-blue) ;
+transform: scale(1.1);
+}
+
+.emoji{
+font-size: 150%;
+}
+
+nav{
+    background-color: var(--white);
+    height: 2rem;
+    margin-bottom: 00.5rem;
+    box-shadow: 0px 2px 8px var(--grey);
+    padding: 0.1rem 0.75rem;
+    margin: 0px;
+}
+nav>h2{
+    display: inline-block;
+}
+
+nav>a{
+    float: right;
+    padding-top: 2px;
+    text-decoration: none;
+}
