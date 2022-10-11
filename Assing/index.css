@@ -29,7 +29,6 @@
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin: auto;
 }
 
 .compName{
@@ -40,20 +39,27 @@
     align-content: center;
     align-items: center;
     font-family:sans-serif;
-    font-weight: 600;
-    background: -webkit-radial-gradient(red, blue);
+    font-weight: 700;
+    
+  }
+  .compF{
+    color: #0eca98;
+  }
+  .compL
+  {
+    color:#020024;
   }
 .form{
     width: 60%;
     height: 80%;
     margin: 5%;
-    border: 2px solid gray;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
     box-sizing: content-box;
     margin: auto;
+    justify-content: center;
 }
 
 .text{
@@ -62,7 +68,7 @@
     text-align: center;
     border-bottom: 0.15rem solid #0eca98;
     font-weight: 700;
-    margin: auto;
+    margin: 1%;
 }
 table{
     margin-inline: auto;
@@ -75,12 +81,12 @@ table{
     width: 25%;
     margin: 10%;
     text-align: center;
-margin: auto;
+margin: 1%;
 }
 .paragraph{
     color:#e1e1e1 ;
     text-align: center;
-    margin: auto;
+    margin: 1%;
 }
 input{
     border: 2px solid gray;
@@ -88,8 +94,8 @@ input{
     padding: 5px;
     margin: 10px;
     width: 80%;
-    height: 8%;
-    margin: auto;
+    height: 10%;
+    margin: 1%;
 }
 input:hover{
     border-color: #00d4ff;
@@ -107,10 +113,21 @@ input:hover{
     background-color: transparent;
     font-size: 0.9rem;
     font-weight: 600;
+    margin: 1%;
 }
 .lowerBtn{
-    margin: auto;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1%;
+}
+.lowerBtn1{
+    margin: 0px;
+    width: 10%;
+    height: 30%;
 }
 .SingInBtn{
     background-color: transparent;
@@ -119,6 +136,8 @@ input:hover{
     padding: 2%;
     font-size: 1rem;
     font-weight: 600;
+    transform: skewX(167deg);
+    margin: 1%;
     
 }
 .SingInBtn:hover{
@@ -126,7 +145,13 @@ input:hover{
     color: #0eca98;
 }
 .tiltbtn{
-    transform: skewX(25deg);
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 .rightSide{
     width:30% ;

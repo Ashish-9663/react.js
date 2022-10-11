@@ -35,6 +35,16 @@ total height=h+p+m+b= */
     /* border: 2px solid hotpink; */
     background-color: white;
 }
+.logoContainerx{
+
+}
+.logoContainer img{
+    height: 100%;
+}
+.mainNavbarLeftSectionMenuContainer{
+    border: 2px solid red;
+    width: 100%;
+}
 .subNavbar{
     width: 100%;
     height: 35%;
@@ -64,6 +74,5 @@ total height=h+p+m+b= */
     width: 66%;
     background-color: skyblue;
     
-}div{
-    border:2px solid blue;
 }
+
