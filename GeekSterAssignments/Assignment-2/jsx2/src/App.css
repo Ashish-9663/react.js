@@ -1,0 +1,21 @@
+*{
+  background-color: #ec6564;
+}
+.App {
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  width: 60%;
+  margin: auto;
+}
+p{
+  color: rgb(217, 216, 216);
+  font-size: 2.3rem;
+  font-family: Airbnb cereal;
+  font-weight: 500;
+}
+
+img{
+  width: 6%;
+  height: 6%;
+}

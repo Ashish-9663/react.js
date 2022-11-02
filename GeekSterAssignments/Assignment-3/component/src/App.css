@@ -1,0 +1,20 @@
+*{
+  font-family:'Times New Roman', Times, serif;
+}
+
+hr{
+  border-width: 3px;
+}
+
+.header-Info, .Skill, .experience, .Hobbies{
+  margin-left: 10px;
+}
+.header-Info a{
+  padding-right:10px;
+}
+.experience h4{
+   font-size: 18px;
+   line-height: 2px;
+   text-decoration: underline 1px;
+}
+
