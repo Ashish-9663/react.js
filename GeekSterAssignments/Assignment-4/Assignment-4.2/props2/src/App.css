@@ -1,38 +1,82 @@
-.App {
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  display:flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  background-color: black;
+  overflow: scroll;
+  overflow: auto;
+  
+}
+.cardContainer{
+  width: 80%;
+  height: 50%;
+  display: flex;
+  margin-top: 5%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 50px 5px rgb(43, 43, 43);
+  flex-direction: column;
+}
+ 
+.moviedetails{
+  color: aliceblue;
+  width: 100%;
+  height: 90%;
+  padding: 1%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.movieImg {
+  width: 70px;
+  height: 100px;
+  margin-top: 10px;
+  border-radius: 2px;
+  margin-right:10px;
+}
+.movieDetailsText{
+  width: 40%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.h2tag{
+  font-weight: 450;
+}
+.h4tag{
+  font-weight: 250;
+  font-size: .8rem;
+  border: 1px solid rgb(46, 46, 46);
+  border-radius: 5px;
+  padding: 3px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.p1tag {
+  color:rgb(0, 80, 155);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.p2tag {
+  
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.p3tag {
+  font-size: .8rem;
 }
-
-.App-link {
-  color: #61dafb;
+.movieAbout{
+  width: 100%;
+  height: 30%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.feedbackBtns{
+  width: 100%;
+  height: 10%;
 }
