@@ -2,6 +2,7 @@ import './App.css';
 import MovieCard from './Components/MovieCard'; 
 import imge1 from "./assets/m1.jpg";
 
+
 function App() {
   const m1 = {
     imgm:imge1,
@@ -14,12 +15,13 @@ function App() {
   };
   return (
     <div className="container">
-     
+        <i class="fa-regular fa-thumbs-up"></i>
        <MovieCard movieImg={m1} movieName={m1} movieHero={m1} movieRelease={m1} movieduration={m1} movieType={m1} movieAbout={m1}/>
-       {/* <Moviecard/>
-       <Moviecard/> */}
-       {/* <Moviecard/>
-       <Moviecard/> */}
+       <MovieCard movieImg={m1} movieName={m1} movieHero={m1} movieRelease={m1} movieduration={m1} movieType={m1} movieAbout={m1}/>
+       <MovieCard movieImg={m1} movieName={m1} movieHero={m1} movieRelease={m1} movieduration={m1} movieType={m1} movieAbout={m1}/>
+       <MovieCard movieImg={m1} movieName={m1} movieHero={m1} movieRelease={m1} movieduration={m1} movieType={m1} movieAbout={m1}/>
+       <MovieCard movieImg={m1} movieName={m1} movieHero={m1} movieRelease={m1} movieduration={m1} movieType={m1} movieAbout={m1}/>
+      
     </div>
   );
 }

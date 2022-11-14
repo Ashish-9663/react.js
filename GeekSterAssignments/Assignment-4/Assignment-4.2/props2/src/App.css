@@ -10,26 +10,27 @@
   display:flex; 
   flex-direction: row;
   flex-wrap: wrap;
-  align-content: center;
   justify-content: center;
   background-color: black;
   overflow: scroll;
   overflow: auto;
+  padding-top: 5%;
   
 }
 .cardContainer{
-  width: 80%;
-  height: 50%;
+  width: 65%;
+  height: 45%;
   display: flex;
   margin-top: 5%;
   border-radius: 15px;
   box-shadow: 0px 0px 50px 5px rgb(43, 43, 43);
   flex-direction: column;
+  flex-wrap: wrap;
 }
  
 .moviedetails{
   color: aliceblue;
-  width: 100%;
+  width: 50%;
   height: 90%;
   padding: 1%;
   display: flex;
@@ -37,46 +38,94 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
+
+}
+.imageLogo{
+  width: 18%;
+  height: 100%;
 }
 .movieImg {
-  width: 70px;
-  height: 100px;
-  margin-top: 10px;
+  width: 100%;
+  height: 100%;
   border-radius: 2px;
-  margin-right:10px;
 }
 .movieDetailsText{
-  width: 40%;
-  height: 70%;
+  width: 100%;
+  height: 50%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
+}
+.details{
+  margin-top: 5px;
+  width: 82%;
+  height: 100%;
+  padding-left: 3%;
+  
 }
 .h2tag{
   font-weight: 450;
+  font-size: 2vw;
+
 }
 .h4tag{
   font-weight: 250;
-  font-size: .8rem;
   border: 1px solid rgb(46, 46, 46);
   border-radius: 5px;
-  padding: 3px;
+  padding: 4px;
   text-align: center;
+  margin-right: 5px;
+  font-size: 1vw;
+}
+.timetype{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 6px;
 }
 .p1tag {
   color:rgb(0, 80, 155);
+  font-size: 1vw;
 }
-.p2tag {
-  
-}
-.p3tag {
-  font-size: .8rem;
+.ptag {
+  color:rgb(0, 80, 155);
+  font-size: 1.1vw;
 }
 .movieAbout{
   width: 100%;
-  height: 30%;
+  height: 40%;
+}
+.p3tag {
+  font-size: .9vw;
 }
 .feedbackBtns{
-  width: 100%;
+  width: 50%;
   height: 10%;
+  margin-left: 1%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  border: none;
+}
+button{
+  background-color: transparent;
+  color: gray;
+
+}
+.rightBackgroungImage{
+  width: 50%;
+  height: 100%;
+}
+img{
+  width: 100%;
+  height: 100%;
+  border-radius:  0 15px 15px 0;
+}
+.bottomButtons{
+  font-size: 1.5vw;
+  margin-left: 20px;
+  border: none;
+  background-color: transparent;
 }
