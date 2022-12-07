@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ReactMarkdown from "react-markdown";
-
+ import remarkGfm from 'remark-gfm';
 
 export default function Editor() {
   const [markDown, setMarkDown] = useState("Markdown preview");
@@ -16,10 +16,11 @@ export default function Editor() {
 
         <div className="innercontainerRightOuter">
           <div className="innercontainerRight" >
-          <ReactMarkdown children={markDown} />
+          <ReactMarkdown children={markDown} remarkPlugins={remarkGfm} /> 
           </div>
         </div>
       </div>
     </>
   );
 }
+
