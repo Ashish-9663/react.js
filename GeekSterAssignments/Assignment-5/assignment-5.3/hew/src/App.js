@@ -1,13 +1,9 @@
 import './App.css';
-import Header from './Components/Header';
-import Middle from './Components/Middle';
-import Footer from './Components/Footer';
+import Generator from './Components/Generator';
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Middle/>
-      <Footer/>
+      <Generator/>
     </div>
   );
 }

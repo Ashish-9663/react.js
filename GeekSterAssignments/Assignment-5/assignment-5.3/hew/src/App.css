@@ -7,78 +7,97 @@
 .App {
   width: 100vw;
   height: 100vh;
-}
-.headerMain {
-  width: 100%;
-  height: 15%;
-}
-
-.headerMainTop{
-  width: 100%;
-  height: 70%;
+  border: 2px solid red;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.headerMainTopLeft {
-  width: 20%;
-  height: 100%;
-  background-color: brown;
+.mainOuterContainer{
+  width: 30%;
+  height: 50%;
+  min-width: 300px;
+  min-height: 300px;
 }
 
-.headerMainTopMid{
-  width: 60%;
-  height: 100%;
-  background-color: greenyellow;
-}
-
-.headerMainTopRight {
-  width: 60%;
-  height: 100%;
-  background-color: darkcyan;
-}
-
-.headerMainBootom {
+.mainInnerContainer{
   width: 100%;
-  height: 30%;
-  background-color: slateblue;
-}
-
-.middleMain {
-  width: 100%;
-  height: 70%;
-  display: flex;
-}
-
-.middleMainLeft {
-  width: 20%;
   height: 100%;
-  background-color:rgb(88, 131, 131);
+  padding: 5%;
   display: flex;
   flex-direction: column;
-  padding: 2%;
+  flex-wrap:nowrap;
 }
-.links {
+
+#mainHeading{
+  text-align: center;
+  font-family: sans-serif;
+  margin-bottom: 5%;
+  font-size: 1.7rem;
+}
+
+.inputText{
   width: 100%;
-  margin-bottom: 10%;
-  font-size: 3vmin;
-  font-family:Arial, Helvetica, sans-serif;
+  border: 1px solid rgb(218, 218, 218);
+  height: 13%;
+  border-radius: 3px;
+  background-color: rgb(233, 233, 233);
 }
 
-
-.middleMainMid {
-  width: 65%;
+#text{
+  width: 85%;
   height: 100%;
-  background-color: rgb(7, 75, 7);
+  background-color: transparent;
+  border: none;
 }
 
-.middleMainRight {
+#btnCpy{
   width: 15%;
   height: 100%;
-  background-color: slategray;
+  background-color:dodgerblue;
+  border: none;
+  border-radius: 0 3px 3px 0;
+  float: right;
+  color: white;
+  font-weight: 550;
 }
 
-.footerMain {
+.passwordSize{
+ margin-top: 5%;
+ height: 80%;
+ font-size: 1em;
+ font-family: sans-serif;
+ font-weight: 550;
+}
+.passwordSize input{
+  height: 100%;
+  width: 20%;
+  float:right;
+  
+}
+.optionList{
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  line-height: 80%;
+}
+.optionList input{
+  margin-right: 3%;
+}
+
+#genBtn{
   width: 100%;
-  height: 15%;
-  background-color: rgb(192, 192, 192);
+  height: 100%;
+  margin-top: 5%;
+  background-color: dodgerblue;
+  border: none;
+  font-size: 1rem;
+  font-weight: 550;
+  border-radius: 3px;
+  color: white;
+}
+#genBtn:hover{
+  background-color: white;
+  color: dodgerblue;
+  border: 1px solid dodgerblue;
 }
