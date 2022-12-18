@@ -1,11 +1,24 @@
 import React from 'react'
+import Result from "./Result";
 
-function items() {
+const Items = (props) => {
+   const {getData} = props;
+
   return (
     <div className='itemComponent'>
         
-    </div>
+        { getData.map(getdatao => (
+          <Result 
+          key={Math.random() * 100}
+          image={getdatao.Poster}
+          name={getdatao.Title}
+          year={getdatao.Year}
+          />
+        
+        ))}
+        </div>
+   
   )
 }
 
-export default items;
+export default Items;

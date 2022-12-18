@@ -5,14 +5,14 @@ import Rs from "./Rs";
     const { recipes } = props;
   return (
     <div className="itemContainer">
-      {recipes.map(recipe => (
+      { recipes.map(recipe => (
         <Rs
-          // key={Math.random() * 100}
+          key={Math.random() * 100}
           name={recipe.recipe.label}
           image={recipe.recipe.image}
           ingredientLines={recipe.recipe.ingredientLines}
         />
-       ))} 
+       ))}
     </div>
   );
 }

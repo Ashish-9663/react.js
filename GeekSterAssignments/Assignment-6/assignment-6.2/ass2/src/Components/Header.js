@@ -8,8 +8,8 @@ function Header(props) {
             HOOKED
         </div>
         <div className='headerComponentSearchBox'>
-            <button className='headerComponentSearchButton' >Search</button>
-            <input className='headerComponentSearchInput' type="text" placeholder="Type here to search...." />
+            <button className='headerComponentSearchButton' onClick={onSearchClick}>Search</button>
+            <input className='headerComponentSearchInput' defaultValue={search} onChange={onInputchange} type="text" placeholder="Type here to search...." />
         </div>
     </div>
   )
