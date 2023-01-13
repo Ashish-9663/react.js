@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.App{  
+    width: 100vw;
+    /* height: 100vh; */
+    font-family: cursive;
+    background-color: rgb(39, 37, 37);
+    
+}
+.contestContainer{
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.contestContainerInner{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-evenly;
+}
+
+.topIcon{
+  width: 100%;
+  /* height: 10%; */
+  border: 2px solid black;
+  width: 15%;
+  text-align: center;
+  background-color:rgb(216, 158, 49);
+  margin: 1% 0;
+  padding: 0.4%;
+  font-size: 3.5vh;
+  border-radius: 6px;
+}
+
+.dataList{
+    background-color: white;
+    margin: 1% 0;
+    border-radius: 6px;
+    padding: 1% 4%;
+}
+.dataListContainerLeft{
+  width: 80%;
+}
+.dataList a{
+  text-decoration: none;
+  color: black;
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.dataListContainerRight{
+  width: 20%;
+}
+.dataListContainerRight img{
+  width: 100px;
+}
