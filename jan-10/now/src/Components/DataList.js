@@ -1,5 +1,3 @@
-import React, { useEffect, useState } from "react";
-import moment from "moment";
 import AtCoder from "../assets/AtCoder.png";
 import CodeForces from "../assets/code-forces.png";
 import CodeChef from "../assets/codechef.jpg";
@@ -43,38 +41,27 @@ const DataList = (props) => {
   let t2 = new Date(eTime);
   let timeEnd = dtFormat.format(t2);
 
-  
-  
-  //  let timedu= duration;
-  //  let d = timedu/3600/24;
-  //  let h = timedu/(60*60);
-  //  let m = timedu;
-  //  let durati = Math.floor(d) +'Days,'+ Math.floor(h) ;  
+
 
    const remainingTime = () => {
     let timedu= duration;
     if(duration > 99999){
       let d = timedu/(3600*24);
-      let h = (timedu/(3600*24))%(24);
-      let m = (timedu/(3600*24))%(60);
+      let h = (timedu%(3600*24));
+      let m = h%3600;
 
-      return Math.floor(d) +' Days,'+ Math.floor(h) +" hours "+ Math.floor(m)+" minutes" ;  
+      return Math.floor(d) +' Days,'+ Math.floor(h/3600) +" hours "+ ((m%3600)/60)+" minutes" ;  
     }
 
     else{
 
       let h = timedu/(60*60);
-      let m = timedu/(60*12);
+      let m = timedu%(60*60);
 
-      return Math.floor(h)+" hours "+ Math.floor(m)+" minutes" ;  
+      return Math.floor(h)+" hours "+ (m/60)+" minutes" ;  
     }
    }
 
-    // const [tr, setTr] = useState(durati);
-   
-    // const gggg = () => { setTr(new Date().toLocaleTimeString())};
-
-    // setInterval(gggg,1000);
 
   const siteLogo = () => {
     let name = site;
