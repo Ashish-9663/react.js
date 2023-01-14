@@ -1,11 +1,9 @@
 import React from "react";
 import DataList from "./DataList";
-// import { useContext } from 'react';
-// import { dataContext } from '../Context';
 
 const Contest = (props) => {
-  // const {getData} = useContext(dataContext);
-  const { getData } = props;
+  
+   const { getData } = props;
   return (
     <div className="contestContainer">
       <div className="contestContainerInner">
@@ -20,6 +18,7 @@ const Contest = (props) => {
             siteUrl={getdatao.url}
             site={getdatao.site}
           />
+
         ))}
       </div>
     </div>

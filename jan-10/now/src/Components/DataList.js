@@ -1,6 +1,5 @@
-import React from "react";
- import moment from "moment";
-
+import React, { useEffect, useState } from "react";
+import moment from "moment";
 import AtCoder from "../assets/AtCoder.png";
 import CodeForces from "../assets/code-forces.png";
 import CodeChef from "../assets/codechef.jpg";
@@ -45,13 +44,37 @@ const DataList = (props) => {
   let timeEnd = dtFormat.format(t2);
 
   
-  let elapsed = moment().format(duration.value);
-   let timedu= new Date(elapsed);
-  let h = timedu.getHours() ;
-    let g =timedu.getMinutes();
-    let s = timedu.getSeconds();
-    let durati = h+':'+g+':'+s;
+  
+  //  let timedu= duration;
+  //  let d = timedu/3600/24;
+  //  let h = timedu/(60*60);
+  //  let m = timedu;
+  //  let durati = Math.floor(d) +'Days,'+ Math.floor(h) ;  
 
+   const remainingTime = () => {
+    let timedu= duration;
+    if(duration > 99999){
+      let d = timedu/(3600*24);
+      let h = timedu/(3600*24*60*60);
+      let m = timedu/(60*60*60*30);
+
+      return Math.floor(d) +' Days,'+ Math.floor(h) +" hours "+ Math.floor(m)+" minutes" ;  
+    }
+
+    else{
+
+      let h = timedu/(60*60);
+      let m = timedu/(60*12);
+
+      return Math.floor(h)+" hours "+ Math.floor(m)+" minutes" ;  
+    }
+   }
+
+    // const [tr, setTr] = useState(durati);
+   
+    // const gggg = () => { setTr(new Date().toLocaleTimeString())};
+
+    // setInterval(gggg,1000);
 
   const siteLogo = () => {
     let name = site;
@@ -85,7 +108,7 @@ const DataList = (props) => {
             End time: &#160;
             {timeEnd}
           </div>
-          <div className="dataListItems">Duration: &#160;{durati}</div>
+          <div className="dataListItems">Duration: &#160;{remainingTime()}</div>
         </div>
         <div className="dataListContainerRight">
           <img src={siteLogo()} alt="logos" />

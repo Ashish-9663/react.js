@@ -3,7 +3,6 @@ import Contest from "./Components/Contest";
 import React, { useState } from "react";
 import { useEffect } from "react";
 import Axios from "axios";
-// import {dataContext} from "./Context.js";
 
 function App() {
   const [getData, setData] = useState([]);
@@ -20,9 +19,9 @@ function App() {
 
   return (
     <div className="App">
-      {/* <dataContext.Provider value={getData}> */}
+      
       <Contest getData={getData} />
-      {/* </dataContext.Provider> */}
+     
     </div>
   );
 }
