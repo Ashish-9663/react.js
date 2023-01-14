@@ -55,8 +55,8 @@ const DataList = (props) => {
     let timedu= duration;
     if(duration > 99999){
       let d = timedu/(3600*24);
-      let h = timedu/(3600*24*60*60);
-      let m = timedu/(60*60*60*30);
+      let h = (timedu/(3600*24))%(24);
+      let m = (timedu/(3600*24))%(60);
 
       return Math.floor(d) +' Days,'+ Math.floor(h) +" hours "+ Math.floor(m)+" minutes" ;  
     }
