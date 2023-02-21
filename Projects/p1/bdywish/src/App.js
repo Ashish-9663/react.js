@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
-
+import My from './components/MyFile';
 function App() {
+  const Mybutton = () => {
+    alert('Click-Me');
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='leftSide'>
+        <h1>Happy BirthDay</h1>
+        <h1>Ruchika</h1>
+      </div>
+      <div className='rightSide'>
+        <img src='https://www.facebook.com/photo/?fbid=2200981830079878&set=a.103341189843963' alt="imageOfBairthDayPerson"/>
+      </div>
+      <button onClick={Mybutton}>Click Here</button>
+      <My pass={Mybutton}/>
     </div>
   );
 }
